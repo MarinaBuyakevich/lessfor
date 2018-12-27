@@ -1,23 +1,29 @@
+@color_primary: #937bff;
+@color_background: rgb(88, 167, 255);
+
 html {
   height: 0;
 }
+
 body {
   margin: 20px;
   padding: 0;
 }
+
 p {
-  color: #937bff;
+  color:@color_primary;
   margin: 0;
   padding: 0;
   width: 100%;
 }
+
 .container {
   background: #B7D1D8;
   padding: 25px;
   background: linear-gradient(to top left, powderblue, rgba(255, 188, 200, 0.58));
 }
 .wrap {
-  background: radial-gradient(transparent, transparent 4px, white 4px, white);
+  background: radial-gradient(transparent, transparent 4px, white 4px,white);
   padding: 10px;
   width: 300px;
   height: 220px;
@@ -28,13 +34,16 @@ p {
 img {
   width: 100%;
 }
+
 .p1 {
   color: #00a0b5;
 }
+
 button {
-  background-color: #58a7ff;
+  background-color: @color_background;
   margin: 0 20px 0 132px;
 }
+
 h1,
 h2,
 h3,
@@ -43,17 +52,21 @@ h5,
 h6 {
   text-align: center;
 }
-#div ol {
-  list-style-position: inside;
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  column-count: 2;
-  list-style-type: square;
-  height: 120px;
+
+#div {
+  ol{
+    list-style-position: inside;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    list-style-type: square;
+    height: 120px;
+  }
 }
+
 .title {
   border-top: 3px solid #a5a5a5;
   padding: 10px;
   margin-top: 25px;
 }
-/*# sourceMappingURL=app.component.css.map */
+
